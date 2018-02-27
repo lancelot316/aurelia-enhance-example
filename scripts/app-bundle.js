@@ -45,7 +45,7 @@ define('main',['exports', './environment'], function (exports, _environment) {
     }
 
     function configure(aurelia) {
-        aurelia.use.standardConfiguration().feature('resources').feature('features');
+        aurelia.use.defaultBindingLanguage().defaultResources().eventAggregator().feature('resources').feature('features');
 
         if (_environment2.default.debug) {
             aurelia.use.developmentLogging();

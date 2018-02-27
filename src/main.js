@@ -2,7 +2,9 @@ import environment from './environment';
 
 export function configure(aurelia) {
     aurelia.use
-        .standardConfiguration()
+        .defaultBindingLanguage()
+        .defaultResources()
+        .eventAggregator()
         .feature('resources')
         .feature('features');
 
